@@ -64,6 +64,12 @@
     \end{tabular*}\vspace{-5pt}
 }
 
+\newcommand{\resumeSubheadingexp}[2]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+    \end{tabular*}\vspace{-5pt}
+}
 
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
 
@@ -101,7 +107,17 @@
         \resumeItem {Rich experience in REST-Api development}{}
         \resumeItem {Interfaces}{QT, Kivy}
         \resumeItemListEnd
-        
+
+     %   \resumeSubheading
+     %   %{MIPT Deep Learning School}{Moscow, Russia}
+     % {Machine Learning and data processing on python ;  Bronze certificate of excellence}{Sep 2018 - Aug 2020}
+     %  \resumeItemListStart
+	 %   \resumeItem {Data visualization}{Seaborn}
+     %   \resumeItem {Data preprocessing}{Pandas}
+     %   \resumeItem {Machine learning}{Keras, Tensorflow, Scikit-Learn}
+     %   \resumeItemListEnd
+
+
         \resumeSubheading
         {Yandex Backend Development School}{Yandex, Remote}
       {Backend Development and testing on python, DevOps/Deploy; }{Sep 2022 - Dec 2022}
@@ -122,7 +138,7 @@
 %--------PROGRAMMING SKILLS------------
 \section{Skills Summary}
 	\resumeSubHeadingListStart
-	\resumeSubItem{Languages}{ Python, C++, Java, C, SQL, Unix scripting}
+	\resumeSubItem{Languages}{Python, C++, Java, C, SQL, Unix scripting}
     \resumeSubItem{Frameworks and Libraries}{Flask, Django, Tornado, FastAPI, pytest, alembic, SqlAlchemy}
 	\resumeSubItem{Tools}{Docker, GIT, Matlab, Postgres, Redis, MongoDB, Yandex Cloud, Yandex Tank, UNIX-based systems administration}
 \resumeSubHeadingListEnd
@@ -131,12 +147,12 @@
 
 %-----------EXPERIENCE-----------------
 \section{Experience}
-  \resumeSubHeadingListStart
-    \resumeSubheading
+\resumeSubHeadingListStart
+    \resumeSubheadingexp
     {Yandex Lyceum}{Barnaul, Russia}
-    {Pet-Projects}{}
-    \resumeItemList
-        \resumeItem{Flask Web project}
+    \resumeItemListStart
+        \resumeItem
+        {Flask Web project}
           {Developed the news aggregator website. The site shows my fullstack-development skills. The frontend uses HTML, HAML, SCSS, Bootstrap and Flask-Blueprints technology. Backend is developed on Flask.
           Connection to ORM database is realized with python framework SQLAlchemy.\ }\\
         \href{https://github.com/mariklolik/stpj}{Project github: https://github.com/mariklolik/stpj}
@@ -145,12 +161,12 @@
           \resumeItem{Weather tracking app}{Designed and developed a PyQt-app to help users understand what to wear today. The weather info is received from OpenWeatherMap-api.}
           \resumeItem{Yandex-Alice game}{Developed a game for Yandex-Alice smart assistant. In development I used Yandex-Alice api and SQLAlchemy to save user score and create a leaderboard.}
           \resumeItem{Telgram, Discord, VK bots}{Developed different bots to simplify bussines interaction with potential users. }
-          
-      \resumeItemListEnd
-      
-    \resumeSubheading
+    \resumeItemListEnd
+    
+    
+    \resumeSubheadingexp
     {Yandex Backend Development School }{Yandex, Remote}
-    {}{}
+    \resumeItemListStart
     \resumeItem{Url-shortener application}{Designed and developed application. 
     Architectured app with OpenAPI, as a part of task studied business-analytics to increase percentage of people using app. App uses FastAPI and uvicorn. Sqlalchemy with alembic for DB and migrations }{}
 
@@ -159,10 +175,9 @@
     \resumeItem{Working with DataBases}{Done migrations of a huge database via Alembic, created indices to increase speed of search}{}
 
     \resumeItem{Testing}{Studied Unit, Integration and System testing. Implemented them via PyTest. Worked with Yandex Tank for highload testing}{}
-      
-    \resumeSubheading
+    \resumeItemListEnd
+    \resumeSubheadingexp
 		{Novosibirsk State University}{Novosibirsk, Russia}
-		{First course programming}{Aug 2021 -  August 2022}
 		\resumeItemListStart
         \resumeItem{C Language}
           {Worked on algorithms, studied at first course of university. Such as numerical systems calculator, Boyer-Moore algorithm, Huffman encoder, Graph algorithms and others. Developed tests for automatic testing system, constructed CMake-files. All algorihms are implemented in C language.}{}
@@ -182,3 +197,4 @@
 \end{description}
 %-------------------------------------------
 \end{document}
+
